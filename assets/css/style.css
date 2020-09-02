@@ -1,0 +1,247 @@
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    background-color: #7D81E6;
+}
+
+#content {
+    height: calc(100% - 90px);
+}
+
+.header-container {
+    height: 90px;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+.menu-icon,
+.profile-icon {
+    max-width: 30%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.close {
+    text-align: right;
+    padding: 10px;
+}
+
+.overlay,
+.sideMenu {
+    position: fixed;
+    bottom: 0
+}
+
+.overlay {
+    top: 0;
+    left: -100%;
+    right: 100%;
+    margin: auto;
+    background-color: rgba(69, 69, 69, 0.4);
+    z-index: 998;
+    transition: all ease 0.2s
+}
+
+.overlay.open {
+    left: 0;
+    right: 0;
+    transition: none;
+}
+
+.sideMenu {
+    left: -100%;
+    top: 0;
+    transition: all ease 0.5s;
+    overflow: hidden;
+    width: 100%;
+    z-index: 999;
+    max-width: 80%;
+    margin-bottom: 0;
+    background-color: #F1F1F1;
+}
+
+.sideMenu.open {
+    left: 0;
+    display: block;
+    overflow-y: auto
+}
+
+.sideMenu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    background-color: white;
+    padding: 5px 1.5rem;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.nav-item .img-div {
+    width: 33px;
+    display: inline-block;
+    margin: auto;
+    margin-right: 12px;
+    text-align: center;
+}
+
+.nav-link {
+    display: inline-block;
+    color: #8D8D8D;
+}
+
+.start-content {
+    width: 80%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 300px;
+    border: 1px solid silver;
+    border-radius: 20px;
+    max-width: 300px;
+    background-color: #f1f1f1;
+}
+
+.start-close-div {
+    height: 60px;
+}
+
+.image-container {
+    padding: 0 16px;
+}
+
+.image-container .img-div {
+    margin-bottom: 8px;
+}
+
+.image-container .img-div img {
+    max-width: 100%;
+}
+
+.chat-input-container {
+    margin: 0 8px;
+    background-color: #f1f1f1;
+    border-radius: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+}
+
+.chat-input-container input {
+    height: 45px;
+    border-radius: 45px;
+    border: 0;
+    margin: auto 8px;
+}
+
+.mic-div {
+    background: #FF8E8E;
+    height: 45px;
+    width: 45px;
+    max-width: 45px;
+    margin: auto 8px auto 0;
+    border-radius: 50%;
+}
+
+.mic-icon {
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #E8E8E8;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #E8E8E8;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #E8E8E8;
+}
+
+.message-container {
+    height: calc(100% - 76px);
+    overflow: auto;
+}
+
+.message-content {
+    width: 80%;
+    margin: auto;
+}
+
+.qmessage p {
+    background-color: #D2D3FF;
+    padding: 12px 15px;
+    border-radius: 0 20px 20px 0;
+    width: 85%;
+    margin-bottom: 5px;
+    max-width: fit-content;
+}
+
+.qmessage p:first-child {
+    border-radius: 20px 20px 20px 0;
+}
+
+.qmessage p:last-child {
+    border-radius: 0 20px 20px 20px;
+}
+
+.amessage p {
+    background-color: #FF85B1;
+    padding: 12px 15px;
+    border-radius: 20px 0 0 20px;
+    width: 85%;
+    color: white;
+    margin: auto;
+    margin-right: 0;
+    margin-bottom: 5px;
+    max-width: fit-content;
+}
+
+.amessage p:first-child {
+    border-radius: 20px 20px 0 20px;
+}
+
+.amessage p:last-child {
+    border-radius: 20px 0 20px 20px;
+}
+
+.qmessage {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.qoption .action {
+    background-color: #7B7EFF;
+    margin: 0 10px 10px 0;
+    border-radius: 38px;
+    min-width: 65px;
+    color: white;
+}
+
+.qoption .action:hover, .qoption .action.active {
+    background: #88C6FF;
+}

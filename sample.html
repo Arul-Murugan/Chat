@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chat</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Font Awesome JS -->
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="header">
+        <div class="container-fluid">
+            <div class="row header-container">
+                <div class="col m-auto text-left">
+                    <img src="./assets/images/bar.png" alt="Menu" class="menu-icon cursor-pointer">
+                </div>
+                <div class="col m-auto text-center">
+                    <img src="./assets/images/logo.png" alt="Logo" class="logo">
+                </div>
+                <div class="col m-auto text-right">
+                    <img src="./assets/images/profile.png" alt="Profile" class="profile-icon">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Content -->
+    <div id="content">
+        <div class="start h-100">
+            <div class="col h-100">
+                <div class="start-content">
+                    <div class="start-close-div">
+                        <div class="close">
+                            <img src="./assets/images/close.png" alt="close" class="start-close cursor-pointer">
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <div class="img-div">
+                            <img src="./assets/images/image1.png" alt="image1">
+                        </div>
+                        <div class="img-div">
+                            <img src="./assets/images/image2.png" alt="image2">
+                        </div>
+                        <div class="img-div">
+                            <img src="./assets/images/image3.png" alt="image3">
+                        </div>
+                        <div class="img-div">
+                            <img src="./assets/images/image4.png" alt="image4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat col-12 p-0 h-100">
+            <div class="message-container">
+                <div class="message-content">
+                </div>
+            </div>
+            <div class="chat-input-container row">
+                <input type="text" placeholder="Type Here" class="col">
+                <div class="mic-div col">
+                    <img src="./assets/images/mic.png" alt="mic" class="mic-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Side Menu Bar -->
+    <div class="sideMenu" id="navbarsExampleDefault">
+        <div class="header-container">
+            <div class="close">
+                <img src="./assets/images/close.png" alt="close" class="menu-close cursor-pointer">
+            </div>
+        </div>
+        <ul class="nav navbar-nav nav-flex-icons ml-auto">
+            <li class="nav-item active">
+                <div class="img-div">
+                    <img src="./assets/images/files.png" alt="files">
+                </div>
+                <a class="nav-link" href="#">Patient Cases</a>
+            </li>
+            <li class="nav-item">
+                <div class="img-div">
+                    <img src="./assets/images/video.png" alt="video">
+                </div>
+                <a class="nav-link" href="#">KOL Videos</a>
+            </li>
+            <li class="nav-item">
+                <div class="img-div">
+                    <img src="./assets/images/file.png" alt="file">
+                </div>
+                <a class="nav-link" href="#">Guidelines</a>
+            </li>
+            <li class="nav-item">
+                <div class="img-div">
+                    <img src="./assets/images/monitor.png" alt="monitor">
+                </div>
+                <a class="nav-link" href="#">Webcast</a>
+            </li>
+            <li class="nav-item">
+                <div class="img-div">
+                    <img src="./assets/images/Union.png" alt="union">
+                </div>
+                <a class="nav-link" href="#">Patient Resources</a>
+            </li>
+            <li class="nav-item">
+                <div class="img-div">
+                    <img src="./assets/images/table.png" alt="table">
+                </div>
+                <a class="nav-link" href="#">My Score Board</a>
+            </li>
+        </ul>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom Script -->
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
